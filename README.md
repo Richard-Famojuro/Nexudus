@@ -1,5 +1,3 @@
-# Nexudus Automation Tester Interview
-
 # Nexudus Automation Tester Interview 
 
 ## Webdriver automatic testing with Playwright
@@ -47,9 +45,6 @@ After running the test with the playwright code E.g.  npx cucumber-js --tags @pr
   https://reports.cucumber.io/reports/027f117d-a6c8-41bb-9d02-66369ed61054
 * use this link generated from the terminal to view the reports for the scenarios 
 (https://reports.cucumber.io/reports/d3cde3f3-a673-4cab-82a0-45ac0ff4b9f9)
-# Method 2
-After running the test with the playwright code E.g.  npx cucumber-js --tags @product --publish
-* use this link generated from the terminal to view the reports for the scenarios 
-https://reports.cucumber.io/reports/027f117d-a6c8-41bb-9d02-66369ed61054
+
 ### Improvement
 * Configure baseUrl and supply only url paths when using `goto(*)` function of playwright
