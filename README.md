@@ -19,12 +19,26 @@ This solution is written with BDD design using Cuccumber feature files and PageO
 
 
 ### How to run the test
+# Method 1
 * Make sure you have on your machine the latest version of nodejs and yarn
 * Install the dependencies with `$ yarn install`
 * To run all the test suits use: `$ yarn test`
 * For specific tags in this solution, use:
   * `$ yarn test:login` to run only login feature
   * `$ yarn test:product` to run on ly the product feature
+# Method 2
+You can use playwright to run this code
+* Install Playwright Test extension on VS code or Maestro on Intellij
+* To run all the test suits use: `npx cucumber-js`
+* For specific tags in this solution, use:
+  * `npx cucumber-js --tags @login` to run only login feature
+  * `npx cucumber-js --tags @login --tags @product` to run on ly the product feature
+* You can also run the tests in parallel and specific files
+
+# REPORTS
+*After running the test with ‘yarn test’
+* use this link generated from the terminal to view the reports for the scenarios 
+(https://reports.cucumber.io/reports/d3cde3f3-a673-4cab-82a0-45ac0ff4b9f9)
 
 ### Improvement
 * Configure baseUrl and supply only url paths when using `goto(*)` function of playwright
