@@ -17,7 +17,6 @@ This solution is written with BDD design using Cuccumber feature files and PageO
 * The password provided for the scenario does not allow user login, hence the credentials for the manual test was used
 * There were slight modifications for the scenarios, for example the step on submitting the form was missing, this was added
 
-
 ### How to run the test
 # Method 1
 * Make sure you have on your machine the latest version of nodejs and yarn
@@ -32,13 +31,18 @@ You can use playwright to run this code
 * To run all the test suits use: `npx cucumber-js`
 * For specific tags in this solution, use:
   * `npx cucumber-js --tags @login` to run only login feature
-  * `npx cucumber-js --tags @login --tags @product` to run on ly the product feature
+  * `npx cucumber-js --tags @product` to run on ly the product feature
 * You can also run the tests in parallel and specific files
 
-# REPORTS
+# Report
+# Method 1
 *After running the test with ‘yarn test’
 * use this link generated from the terminal to view the reports for the scenarios 
 (https://reports.cucumber.io/reports/d3cde3f3-a673-4cab-82a0-45ac0ff4b9f9)
+# Method 2
+After running the test with the playwright code E.g  npx cucumber-js --tags @product --publish
+* use this link generated from the terminal to view the reports for the scenarios 
+https://reports.cucumber.io/reports/027f117d-a6c8-41bb-9d02-66369ed61054
 
 ### Improvement
 * Configure baseUrl and supply only url paths when using `goto(*)` function of playwright
